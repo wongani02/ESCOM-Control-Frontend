@@ -51,7 +51,7 @@ const CreateBaseReportDialog: FunctionComponent<CreateBaseReportDialogProps> = (
             console.log(data.date.toISOString())
 
             await axios.post(
-                'http://127.0.0.1:8000/api/reports/base-report-create/',{
+                'https://escom-control-backend-production.up.railway.app/api/reports/base-report-create/',{
                     name: data.name,
                     date: data.date.toISOString().slice(0, 10)
                 },)

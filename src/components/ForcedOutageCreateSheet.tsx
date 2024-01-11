@@ -53,7 +53,7 @@ const ForcedOutageCreateSheet: FunctionComponent<ForcedOutageCreateSheetProps> =
 
     const onSubmit = async (data: ForcedOutageSchemaType) => {
         try {
-            await axios.post('http://127.0.0.1:8000/api/reports/forced-outages/', {
+            await axios.post('https://escom-control-backend-production.up.railway.app/api/reports/forced-outages/', {
                 feeder: Number(data.feeder),
                 report: data.report,
                 cause: data.cause,

@@ -12,7 +12,7 @@ interface PageProps {
 
 const fetchMimicNumbers = async () =>{
     try {
-        const response = await axios.get('http://127.0.0.1:8000/api/ses-control/mimic-numbers/')
+        const response = await axios.get('https://escom-control-backend-production.up.railway.app/api/ses-control/mimic-numbers/')
 
         console.log(typeof(response.data))
 

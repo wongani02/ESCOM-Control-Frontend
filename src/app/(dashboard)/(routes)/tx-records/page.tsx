@@ -9,7 +9,7 @@ import { columns } from "./columns";
 
 const fetchTXRecords = async () =>{
     try {
-        const response = await axios.get('http://127.0.0.1:8000/api/ses-control/tx-records/')
+        const response = await axios.get('https://escom-control-backend-production.up.railway.app/api/ses-control/tx-records/')
 
         console.log(typeof(response.data))
 

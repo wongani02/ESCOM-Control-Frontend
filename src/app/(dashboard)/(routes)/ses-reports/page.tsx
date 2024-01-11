@@ -7,7 +7,7 @@ import SESContentSection from "@/components/ses-content-setion";
 
 const fetchReports = async () =>{
     try {
-        const response = await axios.get('http://127.0.0.1:8000/api/reports/base-report-create/')
+        const response = await axios.get('https://escom-control-backend-production.up.railway.app/api/reports/base-report-create/')
 
         console.log(typeof(response.data))
 

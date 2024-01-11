@@ -1,7 +1,7 @@
 'use client'
 
+import FeederTableRowValue from "@/components/feederTableRow"
 import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { ColumnDef } from "@tanstack/react-table"
 import axios from "axios"
 import { MoreHorizontal } from "lucide-react"
@@ -19,27 +19,27 @@ export const columns:ColumnDef<MimicNumber>[] = [
     {
         header: 'Feeder',
         accessorKey: 'feeder',
-        cell: async ({row})=>{
+        cell: ({row})=>{
 
             const mimicNumber = row.original
 
             const feederID = Number(mimicNumber.feeder)
 
-            const getFeederDetails = async (number: number) =>{
-                try {
-                    const response = await axios.get(`http://127.0.0.1:8000/api/ses-control/feeder-single/${number}/`)
-                    // console.log(typeof(response.data))
-                    return  response.data
-                } catch (e) {
-                    console.log(e)
-                }
-            }
+            // const getFeederDetails = async (number: number) =>{
+            //     try {
+            //         const response = await axios.get(`https://escom-control-backend-production.up.railway.app/ses-control/feeder-single/${number}/`)
+            //         // console.log(typeof(response.data))
+            //         return  response.data
+            //     } catch (e) {
+            //         console.log(e)
+            //     }
+            // }
 
-            const feeder: Feeder = await getFeederDetails(feederID)
+            // const feeder: Feeder = await getFeederDetails(feederID)
 
             return (
                 <div>
-                    {feeder.feeder}
+                    <FeederTableRowValue id={feederID}/>
                 </div>
             )
         }

@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className='flex items-center p-4'>
         <MobileSideBar/>
         <div className='flex justify-end w-full'>
-            <UserButton afterSignOutUrl='/'/>
+            {/* <UserButton afterSignOutUrl='/'/> */}
         </div>
     </div>
   )

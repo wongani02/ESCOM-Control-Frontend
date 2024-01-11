@@ -43,7 +43,7 @@ const DefectsCreateSheet: FunctionComponent<DefectsCreateSheetProps> = ({open, s
 
         try {
 
-            await axios.post('http://127.0.0.1:8000/api/reports/defect-list-create/', {
+            await axios.post('https://escom-control-backend-production.up.railway.app/api/reports/defect-list-create/', {
                 report: data.report,
                 date_reported: data.date_reported.toISOString().slice(0, 10),
                 description :data.description,

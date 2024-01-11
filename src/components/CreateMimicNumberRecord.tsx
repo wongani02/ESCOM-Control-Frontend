@@ -41,7 +41,7 @@ const CreateMimicNumberDialog: FunctionComponent<CreateMimicNumberDialogProps> =
 
     useEffect(()=>{
         const fetchFeeders = async () =>{
-            const feederList = await axios.get('http://127.0.0.1:8000/api/ses-control/feeders/')
+            const feederList = await axios.get('https://escom-control-backend-production.up.railway.app/api/ses-control/feeders/')
             // console.log(feederList)
             const data:Feeder[] = await feederList.data
 
@@ -61,7 +61,7 @@ const CreateMimicNumberDialog: FunctionComponent<CreateMimicNumberDialogProps> =
             console.log(data.date.toISOString())
 
             await axios.post(
-                'http://127.0.0.1:8000/api/ses-control/mimic-numbers/',{
+                'https://escom-control-backend-production.up.railway.app/api/ses-control/mimic-numbers/',{
                     feeder: Number(data.feeder),
                     mimic_number: data.mimicNumber,
                     date: data.date.toISOString().slice(0, 10),

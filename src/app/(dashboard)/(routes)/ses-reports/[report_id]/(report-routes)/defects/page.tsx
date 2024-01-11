@@ -14,7 +14,7 @@ interface PageProps {
 
 const fetchReport = async (id: number) =>{
   try {
-    const data = await axios.get(`http://127.0.0.1:8000/api/reports/base-report-detail/${id}/`);
+    const data = await axios.get(`https://escom-control-backend-production.up.railway.app/api/reports/base-report-detail/${id}/`);
 
     return data.data
 

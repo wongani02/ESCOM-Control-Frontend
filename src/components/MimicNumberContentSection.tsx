@@ -1,6 +1,6 @@
 'use client'
 
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import CreateBaseReportDialog from "./CreateBaseReportDialog";
 import { Button } from "./ui/button";
 import { PlusCircle, SearchIcon } from "lucide-react";
@@ -15,6 +15,16 @@ interface MimicNumberContentSectionProps {
 const MimicNumberContentSection: FunctionComponent<MimicNumberContentSectionProps> = () => {
 
     const [showCreateModal, setShowCreateModal] = useState<boolean>(false)
+
+    const [isMounted, setIsMounted] = useState<boolean>(false);
+
+    useEffect(()=>{
+        setIsMounted(true)
+    }, [])
+
+    if(!isMounted){
+        return null
+    }
 
     return ( 
         <>
