@@ -12,7 +12,7 @@ const BaseReportCard: FunctionComponent<BaseReportCardProps> = ({reports}) => {
     return ( 
         <> 
             {reports.map((report) =>(
-                <div className="max-w-[650px] mt-2 flex-col justify-center items-center mx-auto">
+                <div key={report.pk} className="max-w-[650px] mt-2 flex-col justify-center items-center mx-auto">
                 <Link className="flex items-center justify-center hover:shadow-md" href={`/ses-reports/${report.pk}`}>
                     <Card className="p-4 items-center">
                         <CardTitle className="text-xl font-semibold flex justify-between">

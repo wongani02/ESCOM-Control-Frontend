@@ -124,7 +124,7 @@ const PlannedOutageCreateSheet: FunctionComponent<PlannedOutageCreateSheetProps>
                                                 </FormControl>
                                                 <SelectContent>
                                                     {feeders.map((feeder)=>(
-                                                        <SelectItem value={`${feeder.pk}`}>{feeder.feeder}</SelectItem>
+                                                        <SelectItem key={feeder.pk} value={`${feeder.pk}`}>{feeder.feeder}</SelectItem>
                                                     ))}
                                                 </SelectContent>
                                             </Select>
@@ -221,7 +221,7 @@ const PlannedOutageCreateSheet: FunctionComponent<PlannedOutageCreateSheetProps>
                                             <FormControl>
                                                 <Input type="number" placeholder="" {...field}/>
                                             </FormControl>
-                                            <FormDescription>Number of TX's out</FormDescription>
+                                            <FormDescription>Number of TX&apos;s out</FormDescription>
                                             <FormMessage/>
                                         </FormItem>
                                     )}

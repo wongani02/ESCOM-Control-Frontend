@@ -133,7 +133,7 @@ const CreateMimicNumberDialog: FunctionComponent<CreateMimicNumberDialogProps> =
                                             </FormControl>
                                             <SelectContent>
                                                 {feeders.map((feeder)=>(
-                                                    <SelectItem value={`${feeder.pk}`}>{feeder.feeder}</SelectItem>
+                                                    <SelectItem key={feeder.pk} value={`${feeder.pk}`}>{feeder.feeder}</SelectItem>
                                                 ))}
                                             </SelectContent>
                                         </Select>

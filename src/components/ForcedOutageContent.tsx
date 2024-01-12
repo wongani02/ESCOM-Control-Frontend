@@ -26,7 +26,9 @@ const ForcedOutageContent: FunctionComponent<ForcedOutageContentProps> = ({repor
                     <div className="p-2 rounded-full bg-slate-100 cursor-pointer">
                         <SearchIcon/>
                     </div>
-                    <Button onClick={()=>setOpen(true)} variant={'default'}><PlusCircle className="h-5 w-5 mr-2"/> Add Forced Outage</Button>
+                    <Button onClick={()=>setOpen(true)} variant={'default'}>
+                        <PlusCircle className="h-5 w-5 mr-2"/> Add Forced Outage
+                    </Button>
                 </div>   
                     {/* <Empty label="No Mimic Numbers Available." />  */}
                 <div className="space-y-4 mt-6 mb-8">

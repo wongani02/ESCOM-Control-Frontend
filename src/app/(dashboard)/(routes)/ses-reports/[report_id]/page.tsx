@@ -95,7 +95,7 @@ const Page: FunctionComponent<PageProps> = async ({params}) => {
       />
       <div className="px-4 md:px-20 mt-4 lg:px-32 space-y-4">
         {tools.map((tool)=>(
-          <Link className='' href={`${params.report_id}/${tool.href}`}>
+          <Link key={tool.href} className='' href={`${params.report_id}/${tool.href}`}>
             <Card
             key={tool.href} className="p-4 mt-4 transition border-black/5 flex items-center justify-between hover:shadow-md cursor-pointer">
               <div className="items-center flex gap-x-4">
