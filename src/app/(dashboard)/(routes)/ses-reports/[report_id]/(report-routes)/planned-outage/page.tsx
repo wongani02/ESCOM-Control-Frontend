@@ -5,6 +5,7 @@ import axios from "axios";
 import { Calendar, CalendarCheck2 } from "lucide-react";
 import { FunctionComponent } from "react";
 import { PlannedOutageColumns } from "./columns";
+import { BaseReportList } from "@/types/apiSchematypes";
 
 
 interface PageProps {

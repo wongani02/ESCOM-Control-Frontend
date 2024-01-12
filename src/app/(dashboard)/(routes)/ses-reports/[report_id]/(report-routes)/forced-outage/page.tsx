@@ -5,6 +5,7 @@ import { FileWarning } from "lucide-react";
 import { FunctionComponent } from "react";
 import { ForcedOutageColumns } from "./columns";
 import axios from "axios";
+import { BaseReportList } from "@/types/apiSchematypes";
 
 
 interface PageProps {

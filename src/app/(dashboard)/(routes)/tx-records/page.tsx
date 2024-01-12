@@ -5,6 +5,7 @@ import axios from "axios";
 import { Zap } from "lucide-react";
 import { FunctionComponent } from "react";
 import { columns } from "./columns";
+import { TXReplacementRecord } from "@/types/apiSchematypes";
 
 
 const fetchTXRecords = async () =>{

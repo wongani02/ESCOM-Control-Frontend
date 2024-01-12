@@ -1,3 +1,4 @@
+import { Defect } from "@/types/apiSchematypes";
 import { ColumnDef } from "@tanstack/react-table";
 
 

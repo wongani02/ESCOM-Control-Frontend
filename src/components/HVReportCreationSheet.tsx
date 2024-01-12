@@ -19,6 +19,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { format } from "date-fns";
 import { Calendar } from "./ui/calendar";
 import { useRouter } from "next/navigation";
+import { BaseReportList, Feeder } from "@/types/apiSchematypes";
 
 
 

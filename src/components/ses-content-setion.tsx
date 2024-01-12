@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { PlusCircle, SearchIcon } from "lucide-react";
 import BaseReportCard from "./BaseReportCard";
 import { Empty } from "./Empty";
+import { BaseReport } from "@/types/apiSchematypes";
 
 interface SESContentSectionProps {
     reports: BaseReport[]

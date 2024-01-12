@@ -3,6 +3,7 @@ import { Card, CardDescription, CardFooter, CardTitle } from "./ui/card";
 import Link from "next/link";
 import { format } from "date-fns";
 import { Calendar, PenLineIcon } from "lucide-react";
+import { BaseReport } from "@/types/apiSchematypes";
 
 interface BaseReportCardProps {
     reports: BaseReport[]

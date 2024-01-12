@@ -1,3 +1,4 @@
+import { PlannedOutage } from "@/types/apiSchematypes";
 import { ColumnDef } from "@tanstack/react-table";
 
 

@@ -17,6 +17,7 @@ import { format } from "date-fns";
 import { CalendarIcon, LoaderIcon } from "lucide-react";
 import { Calendar } from "./ui/calendar";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
+import { Feeder } from "@/types/apiSchematypes";
 
 
 interface CreateMimicNumberDialogProps {

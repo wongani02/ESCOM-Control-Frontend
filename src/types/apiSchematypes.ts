@@ -1,6 +1,6 @@
 
 
-interface Feeder {
+export interface Feeder {
     pk: string
     feeder: string
     number_of_transformers: number
@@ -13,7 +13,7 @@ interface Feeder {
 }
 
 
-interface BaseReport {
+export interface BaseReport {
     pk: number
     name: string
     date: string
@@ -21,7 +21,7 @@ interface BaseReport {
 }
 
 
-interface Defect {
+export interface Defect {
     date_reported: string
     description: string
     responsible_office: string
@@ -31,7 +31,7 @@ interface Defect {
 }
 
 
-interface HVReport {
+export interface HVReport {
     feeder: Feeder
     report: number
     cause: string
@@ -43,7 +43,7 @@ interface HVReport {
 }
 
 
-interface ForcedOutage {
+export interface ForcedOutage {
     feeder: Feeder
     report: number
     cause: string
@@ -59,7 +59,7 @@ interface ForcedOutage {
 }
 
 
-interface PlannedOutage {
+export interface PlannedOutage {
     feeder: Feeder
     report: number
     cause: string
@@ -77,7 +77,7 @@ interface PlannedOutage {
 }
 
 
-interface BaseReportList {
+export interface BaseReportList {
     pk: number
     name: string
     date: string
@@ -87,7 +87,7 @@ interface BaseReportList {
     planned_outage_records: [PlannedOutage]
 }
 
-interface MimicNumber {
+export interface MimicNumber {
     pk: number
     mimic_number: number
     date: string
@@ -97,7 +97,7 @@ interface MimicNumber {
     location: string
 }
 
-interface TXReplacementRecord {
+export interface TXReplacementRecord {
     pk: number
     date: string
     location: string

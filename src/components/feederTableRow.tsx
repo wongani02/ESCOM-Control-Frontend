@@ -1,5 +1,6 @@
 
 
+import { Feeder } from "@/types/apiSchematypes";
 import axios from "axios";
 import { FunctionComponent } from "react";
 

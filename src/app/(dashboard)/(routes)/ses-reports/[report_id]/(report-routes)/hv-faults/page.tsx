@@ -1,11 +1,11 @@
 import Heading from "@/components/Heading";
 import HVReportCreateButton from "@/components/buttons/HVReportCreateButton";
 import DataTableComponent from "@/components/dataTableComponent";
-import { toast } from "@/components/ui/use-toast";
 import axios from "axios";
 import { ZapIcon } from "lucide-react";
 import { FunctionComponent } from "react";
 import { HVColumns } from "./columns";
+import { BaseReportList } from "@/types/apiSchematypes";
 
 interface PageProps {
   params: {
@@ -21,11 +21,6 @@ const fetchReport = async (id: number) =>{
 
   }catch (e) {
     console.log(e)
-    // toast({
-    //   title: 'Error',
-    //   description: 'Failed to fetch resources, please make sure you\'re connected to the internet',
-    //   variant: 'destructive'
-    // })
   }
 }
  

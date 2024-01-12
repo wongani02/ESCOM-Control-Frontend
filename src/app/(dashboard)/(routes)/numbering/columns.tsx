@@ -2,6 +2,7 @@
 
 import FeederTableRowValue from "@/components/feederTableRow"
 import { Button } from "@/components/ui/button"
+import { MimicNumber } from "@/types/apiSchematypes"
 import { ColumnDef } from "@tanstack/react-table"
 import axios from "axios"
 import { MoreHorizontal } from "lucide-react"

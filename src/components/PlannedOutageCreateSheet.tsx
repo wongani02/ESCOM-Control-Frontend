@@ -15,6 +15,7 @@ import { on } from "events";
 import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { toast } from "./ui/use-toast";
+import { Feeder } from "@/types/apiSchematypes";
 
 interface PlannedOutageCreateSheetProps {
     open: boolean

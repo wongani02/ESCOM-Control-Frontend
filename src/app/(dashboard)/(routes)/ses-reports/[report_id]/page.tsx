@@ -15,7 +15,7 @@ import {
 import Heading from '@/components/Heading';
 import Link from 'next/link';
 import axios from 'axios';
-import { toast } from '@/components/ui/use-toast';
+import { BaseReportList } from '@/types/apiSchematypes';
 
 
 const tools = [
@@ -65,11 +65,7 @@ const fetchReport = async (id: number) =>{
 
   }catch (e) {
     console.log(e)
-    toast({
-      title: 'Error',
-      description: 'Failed to fetch resources, please make sure you\'re connected to the internet',
-      variant: 'destructive'
-    })
+    
   }
 }
 

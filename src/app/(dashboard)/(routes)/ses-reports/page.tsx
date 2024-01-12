@@ -3,6 +3,7 @@ import { PenBox } from "lucide-react";
 import { FunctionComponent } from "react";
 import axios from "axios";
 import SESContentSection from "@/components/ses-content-setion";
+import { BaseReport } from "@/types/apiSchematypes";
 
 
 const fetchReports = async () =>{

@@ -1,3 +1,4 @@
+import { ForcedOutage } from "@/types/apiSchematypes";
 import { ColumnDef } from "@tanstack/react-table";
 import { format } from "date-fns";
 

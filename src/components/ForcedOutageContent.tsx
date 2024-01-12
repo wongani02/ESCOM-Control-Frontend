@@ -5,6 +5,7 @@ import ForcedOutageCreateSheet from "./ForcedOutageCreateSheet";
 import { set } from "date-fns";
 import { Button } from "./ui/button";
 import { PlusCircle, SearchIcon } from "lucide-react";
+import { BaseReportList } from "@/types/apiSchematypes";
 
 interface ForcedOutageContentProps {
     report: BaseReportList

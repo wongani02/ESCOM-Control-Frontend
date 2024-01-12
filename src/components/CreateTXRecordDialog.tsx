@@ -17,6 +17,7 @@ import { format } from "date-fns";
 import { CalendarIcon, Loader2 } from "lucide-react";
 import { Calendar } from "./ui/calendar";
 import { toast } from "./ui/use-toast";
+import { Feeder } from "@/types/apiSchematypes";
 
 
 interface CreateTXRecordDialogProps {

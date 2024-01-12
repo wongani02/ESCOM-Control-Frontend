@@ -4,6 +4,7 @@ import { PlusCircle, SearchIcon } from "lucide-react";
 import { FunctionComponent, useState } from "react";
 import { Button } from "./ui/button";
 import PlannedOutageCreateSheet from "./PlannedOutageCreateSheet";
+import { BaseReportList } from "@/types/apiSchematypes";
 
 interface PlannedOutageContentProps {
     report: BaseReportList

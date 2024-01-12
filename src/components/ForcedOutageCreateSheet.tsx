@@ -14,6 +14,7 @@ import { Button } from "./ui/button";
 import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { toast } from "./ui/use-toast";
+import { Feeder } from "@/types/apiSchematypes";
 
 interface ForcedOutageCreateSheetProps {
     open: boolean

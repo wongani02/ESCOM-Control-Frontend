@@ -5,6 +5,7 @@ import { boolean } from "zod";
 import DefectsCreateSheet from "./DefectsCreateSheet";
 import { PlusCircle, SearchIcon } from "lucide-react";
 import { Button } from "./ui/button";
+import { BaseReportList } from "@/types/apiSchematypes";
 
 interface DefectsContentProps {
     report: BaseReportList
